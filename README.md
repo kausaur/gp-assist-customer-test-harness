@@ -1,6 +1,6 @@
-# Checkout Component Test Harness
+# Assist Customer Portal
 
-This is a React-based test application for the Phoenix Checkout Component. It allows you to configure settings and test the checkout flow.
+This is a React-based test application for the Assist Customer Portal Component. It allows you to configure settings and test the checkout flow.
 
 ## How to Use
 
