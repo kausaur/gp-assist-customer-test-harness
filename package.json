@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@phoenix-frontend/ep-react-components": "https://worldpay-elements-stage.worldpay.com/phoenix-components-v0.21.206.tgz",
-    "@phoenix/stencil-lib": "https://worldpay-elements-stage.worldpay.com/phoenix-stencil-components-v0.89.2.tgz",
+    "@phoenix-frontend/ep-react-components": "https://worldpay-elements-dev.worldpay.com/phoenix-components-v0.21.230.tgz",
+    "@phoenix/stencil-lib": "https://worldpay-elements-dev.worldpay.com/phoenix-stencil-components-v0.93.7.tgz",
     "axios": "^1.7.9",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
