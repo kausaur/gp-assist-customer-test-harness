@@ -8,7 +8,7 @@ services:
       - key: NODE_VERSION
         value: 18
       - key: VITE_PHOENIX_API
-        value: https://phoenix-api-stage.worldpay.com/
+        value: https://assist-api-dev.worldpay.com/
     routes:
       - type: rewrite
         source: /*
