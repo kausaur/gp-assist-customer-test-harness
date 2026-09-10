@@ -13,3 +13,17 @@ services:
       - type: rewrite
         source: /*
         destination: /index.html
+  - type: web
+    name: phoenix-checkout-dev
+    env: static
+    buildCommand: cp package.dev.json package.json && npm install --no-package-lock && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+      - key: VITE_PHOENIX_API
+        value: https://phoenix-api-dev.worldpay.com/
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
