@@ -6,7 +6,7 @@ services:
     staticPublishPath: ./dist
     envVars:
       - key: NODE_VERSION
-        value: 18
+        value: 20
       - key: VITE_PHOENIX_API
         value: https://phoenix-api-stage.worldpay.com/
     routes:
@@ -16,13 +16,13 @@ services:
   - type: web
     name: phoenix-checkout-dev
     env: static
-    buildCommand: cp package.dev.json package.json && npm install --no-package-lock && npm run build
+    buildCommand: cp package.dev.json package.json && npm install && npm run build
     staticPublishPath: ./dist
     envVars:
       - key: NODE_VERSION
-        value: 18
+        value: 20
       - key: VITE_PHOENIX_API
-        value: https://phoenix-api-dev.worldpay.com/
+        value: https://assist-api-dev.worldpay.com/
     routes:
       - type: rewrite
         source: /*
