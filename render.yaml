@@ -27,3 +27,17 @@ services:
       - type: rewrite
         source: /*
         destination: /index.html
+  - type: web
+    name: phoenix-checkout-cert
+    env: static
+    buildCommand: cp package.cert.json package.json && npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: VITE_PHOENIX_API
+        value: https://assist-api-cert.worldpay.com/
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
